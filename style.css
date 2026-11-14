@@ -111,13 +111,17 @@
 }
 .stories{
     display: flex;
-    gap: 30px;
+    gap: 20px;
+    position: absolute;
+    left: 325px;
+    top: 100px;
 }
 .user1{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    margin-top: 10px;
 }
 .user1-pfp{
     width: 70px;
@@ -129,26 +133,32 @@
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
 }
-.user2{
+.user2, .user3, .user4, .user5, .user6{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
+    cursor: pointer;
 }
-.user2-pfp{
+.user2:active, .user3:active, .user4:active, .user5:active, .user6:active{
+    transform: scale(0.95);
+}
+.user2-pfp, .user3-pfp, .user4-pfp, .user5-pfp, .user6-pfp{
     width: 70px;
     height: 70px;
     border-radius: 50%;
     border: #07090a 3px solid;
 }
-.user2-ring{
+.user2-ring, .user3-ring, .user4-ring, .user5-ring, .user6-ring{
     display: flex;
     border-radius: 50%;
     align-items: center;
     border: 3px solid transparent;
     background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888) border-box;
+    transition: transform 0.1s ease-in-out;
 }
-.user2-name{
+
+.user2-name, .user3-name, .user4-name, .user5-name, .user6-name{
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 13px;
